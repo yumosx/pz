@@ -1,12 +1,15 @@
-import User
+from dao import user as user_dao
+from cache import user as userCache
+from domain import user as domain
+
 
 class UserRepo:
-    def __int__(self, dao):
+    def __int__(self, dao: user_dao.UserDao, cache: userCache.UserCache):
         self.dao = dao
-        pass
+        self.cache = cache
 
-    def save(self, user: User):
-        return self.dao.save()
+    def save(self, user: domain.User):
+        return self.dao.save(user)
 
-    def get_user_by_id(self):
-        return self.dao.get_user_by_id()
+    def get_user_by_id(self, user_id: int):
+        return self.dao.get_user_by_id(user_id)
