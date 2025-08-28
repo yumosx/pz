@@ -4,4 +4,15 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi>=0.116.1",
+    "injector>=0.22.0",
+    "pyyaml>=6.0.2",
+    "redis>=6.4.0",
+    "sqlalchemy>=2.0.43",
+    "sqlmodel>=0.0.24",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true

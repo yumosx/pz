@@ -1,0 +1,21 @@
+database:
+  # 基础数据库连接信息
+  db_host: "localhost"
+  db_port: 5432
+  db_username: "myuser"
+  db_password: "mypassword"
+  db_database: "mydatabase"
+
+  # 字符集设置
+  db_charset: "utf8"
+
+  # 额外的数据库连接选项
+  db_extras: "keepalives=1&keepalives_idle=60"
+
+  # SQLAlchemy配置
+  sqlalchemy_database_uri_scheme: "postgresql"
+  sqlalchemy_pool_size: 30
+  sqlalchemy_max_overflow: 10
+  sqlalchemy_pool_recycle: 3600
+  sqlalchemy_pool_pre_ping: true
+  sqlalchemy_echo: false

@@ -10,3 +10,9 @@ class MetaProp:
     b = 2
     def __len__(self):
         return self.a + self.b
+    def __repr__(self):
+        pass
+    def __float__(self):
+        pass
+    def __int__(self):
+        pass
