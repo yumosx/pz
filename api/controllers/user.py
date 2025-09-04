@@ -10,5 +10,5 @@ def register():
 
 @router.get("/user_info/{user_id}")
 def get_user_info(user_id: int):
-    UserService.get_user_info(None, user_id)
+    UserService.get_user_info(user_id)
     return

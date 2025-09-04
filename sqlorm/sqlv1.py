@@ -1,7 +1,6 @@
 import sqlalchemy
 from sqlalchemy.orm import declarative_base, Mapped, mapped_column, sessionmaker
 
-#Construct a base class for declarative class definitions.
 Base = declarative_base()
 
 db = sqlalchemy.create_engine("")
